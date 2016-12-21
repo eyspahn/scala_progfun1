@@ -1,0 +1,13 @@
+compile
+exit
+compile
+run
+pwd
+exit
+console
+reload
+test
+compile
+test
+pwd
+exit

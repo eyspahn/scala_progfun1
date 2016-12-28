@@ -1,0 +1,24 @@
+console
+clean
+compile
+test
+:help test
+help test
+test
+clean
+compile
+test
+clean
+compile
+test
+test -v
+test --v
+clean
+compile
+test
+console
+clean
+compile
+test
+pwd
+exit

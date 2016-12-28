@@ -1,0 +1,13 @@
+[0m[[0minfo[0m] [0m[32mFunSetSuite:[0m[0m
+[0m[[0minfo[0m] [0m[32m- contains is implemented[0m[0m
+[0m[[0minfo[0m] [0m[32m  + contains is implemented! [0m[0m
+[0m[[0minfo[0m] [0m[32m- singletonSet(1) contains 1[0m[0m
+[0m[[0minfo[0m] [0m[32m- union contains all elements of each set[0m[0m
+[0m[[0minfo[0m] [0m[32m- intersect contains only the same elements of each set[0m[0m
+[0m[[0minfo[0m] [0m[32m- diff contains elements which are not in both sets[0m[0m
+[0m[[0minfo[0m] [0m[32m- filter returns the subset of `s` for which `p` holds[0m[0m
+[0m[[0minfo[0m] [0m[32m- forall checks if all elements in set satisfies p[0m[0m
+[0m[[0minfo[0m] [0m[31m- exists checks to see if there is an integer in s that satisfies p *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  FunSets.exists($anon.this.ex_1, {[0m[0m
+[0m[[0minfo[0m] [0m[31m    ((n: Int) => $anon.this.isOdd(n))[0m[0m
+[0m[[0minfo[0m] [0m[31m  }) was false exists 1 (FunSetSuite.scala:155)[0m[0m

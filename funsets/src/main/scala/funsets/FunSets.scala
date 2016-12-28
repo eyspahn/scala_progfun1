@@ -71,9 +71,9 @@ object FunSets {
     */
   def forall(s: Set, p: Int => Boolean): Boolean = {
     def iter(a: Int): Boolean = {
-      if (a >= -bound) true
-      else if (contains(s,a) && !p(a)) false
-      else iter(a-1)
+      if (a < -bound) true // if you've gone through all the values
+      else if (contains(s,a) && !p(a)) false // if a is in the set but doesn't satisfy p
+      else iter(a-1) // continue to the next value
     }
     iter(bound)
   }
@@ -84,12 +84,15 @@ object FunSets {
     */
   def exists(s: Set, p: Int => Boolean): Boolean = {
       !forall(s, x => !p(x))
+    // http://en.wikipedia.org/wiki/Existential_quantification#Negation
   }
 
   /**
     * Returns a set transformed by applying `f` to each element of `s`.
     */
-  def map(s: Set, f: Int => Int): Set = ???
+  def map(s: Set, f: Int => Int): Set = {
+    (y: Int)=> exists(s, x=> f(x)==y)
+  }
 
   /**
     * Displays the contents of a set

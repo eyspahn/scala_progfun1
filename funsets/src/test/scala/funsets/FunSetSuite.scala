@@ -143,19 +143,27 @@ class FunSetSuite extends FunSuite {
   test("forall checks if all elements in set satisfies p") {
     new TestSets{
       assert(forall(union(s1, s3),(x:Int)=> x%2!=0), "forall odd")
-      assert(forall(union(s1, s3),(x:Int)=> x%2==0), "forall even") // SHOULD NOT WORK BUT DOES
       assert(forall(s2, (x:Int)=> x%2==0), "forall s2")
     }
   }
 
   test("exists checks to see if there is an integer in s that satisfies p") {
     new TestSets{
-      val ex_1 = intersect(s1, s3)
-      def isOdd(n: Int):Boolean = n%2!=0
-      assert(exists(ex_1, isOdd), "exists 1")
+      assert(exists(s1, (n: Int)=> (n==1)), "exists 1")
+      assert(exists(union(s1, s3), (n: Int)=> (n==1)), "exists 2")
+      assert(!exists(s1, (n: Int)=> (n==2)), "exists 3")
+
     }
   }
 
-
+  test("map applies a function to every element in set") {
+    new TestSets{
+      val mapped = map(union(s1, s2), (x: Int)=> x+5)
+      assert(contains(mapped, 6), "mapped 6")
+      assert(contains(mapped, 7), "mapped 7")
+      assert(!contains(mapped, 8), "mapped 8")
+      assert(!contains(mapped, 1), "mapped 1")
+    }
+  }
 
 }

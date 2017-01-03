@@ -78,3 +78,11 @@ test
 clean
 compile
 test
+submit
+submit eyspahn@gmail.com 
+[trace] Stack trace suppressed: run last *:submit for the full output.
+[error] (*:submit) Submission failed
+[error] Total time: 0 s, completed Dec 28, 2016 3:51:31 PM
+> submit eyspahn@gmail.com 
+> submit eyspahn@gmail.com BH1XnnaqdAPNzupY
+submit eyspahn@gmail.com BH1XnnaqdAPNzupY

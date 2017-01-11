@@ -21,3 +21,4 @@ class Nil[T] extends List[T] {
   def tail: Nothing = throw new NoSuchElementException("Nil.tail")
   // Nothing is the type of the exception; Nothing is a subtype of any other type
 }
+

@@ -1,0 +1,19 @@
+[0m[[0minfo[0m] [0m[32mHuffmanSuite:[0m[0m
+[0m[[0minfo[0m] [0m[32m- weight of a larger tree[0m[0m
+[0m[[0minfo[0m] [0m[32m- chars of a larger tree[0m[0m
+[0m[[0minfo[0m] [0m[32m- string2chars("hello, world")[0m[0m
+[0m[[0minfo[0m] [0m[32m- makeOrderedLeafList for some frequency table[0m[0m
+[0m[[0minfo[0m] [0m[32m- combine of some leaf list[0m[0m
+[0m[[0minfo[0m] [0m[31mException encountered when attempting to run a suite with class name: patmat.HuffmanSuite *** ABORTED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.StackOverflowError:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.containChar(Huffman.scala:217)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.encodeChar(Huffman.scala:212)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.encodeChar(Huffman.scala:212)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.encodeChar(Huffman.scala:212)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.encodeChar(Huffman.scala:212)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.encodeChar(Huffman.scala:212)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.encodeChar(Huffman.scala:212)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.encodeChar(Huffman.scala:212)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.encodeChar(Huffman.scala:212)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at patmat.Huffman$.encodeChar(Huffman.scala:212)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
